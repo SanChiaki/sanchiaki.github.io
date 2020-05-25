@@ -1,0 +1,48 @@
+html,body,div,span{
+    padding:0;
+    margin:0;
+}
+html,body{
+    height:100%;
+    width:100%;
+}
+
+#container{
+    display: flex;
+    justify-content:center;
+    height:100%;
+    align-items: center;
+    background-color: #eeeeea;
+    color: black;
+}
+.slogan {
+    position: relative;
+    border: 1px solid black;
+    letter-spacing: 20px;
+    line-height: 1.2;
+    padding-top: 1rem;
+}
+.slogan span{
+    font-weight: bold;
+    font-size: 10rem;
+    font-family: serif;
+    writing-mode: vertical-rl;
+}
+.slogan span::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    border-top: dashed 1px #ccc;
+}
+
+.slogan span::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    border-left: dashed 1px #ccc;
+}
